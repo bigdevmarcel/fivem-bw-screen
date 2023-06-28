@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/main.css">
+    <script src="./assets/main.js"></script>
+    <title>BW SCREEN</title>
+</head>
+<body>
+   
+    <div class="diga">
+        <div class="box">
+            <div class="napismain">
+                Jesteś nieprzytomny
+            </div>
+            <div class="napis2">
+                Po upływie czasu, przytrzymaj przycisk <b>[E]</b> aby zostać transportowany na szpital
+            </div>
+            <div class="divider">
+                
+            </div>
+            <div class="czas">
+                <h1 id="counter">Pozostało: 5:00</h1>
+
+                <script>
+                  var counterElement = document.getElementById('counter');
+                  var startTime = 300;
+              
+                  function updateCounter() {
+                    var minutes = Math.floor(startTime / 60);
+                    var seconds = startTime % 60;
+              
+                    if (seconds < 10) {
+                      seconds = '0' + seconds;
+                    }
+              
+                    counterElement.textContent = 'Pozostało: ' + minutes + ':' + seconds;
+              
+                    if (startTime === 0) {
+                      clearInterval(intervalId);
+                    }
+              
+                    startTime--;
+                  }
+              
+                  var intervalId = setInterval(updateCounter, 1000);
+                </script>
+            </div>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    background-image: url('https://wallpaperaccess.com/full/3401174.jpg');
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    outline: none
+}
+
+.box {
+  width: 400px;
+  height: 200px;
+  background-color: rgba(46, 24, 61, 0.5);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  position: fixed;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+}
+
+.napismain {
+  top: 5%;
+  font-family: 'Anton', sans-serif;
+  color: white;
+  font-weight: 800;
+  font-size: 31px;
+  position: fixed;
+  left: 6%;
+}
+
+.napis2 {
+  font-family: 'Hind', sans-serif;
+  color: white;
+  font-weight: 500;
+  top: 25%;
+  font-size: 25px;
+  position: fixed;
+  left: 0%;
+  text-align: center;
+}
+
+.divider {
+  position: relative;
+  height: 1px;
+  /* background-color: black; */
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: rgb(48, 47, 47);
+}
+
+.czas {
+  font-family: 'Geologica', sans-serif;
+  color: white;
+  position: fixed;
+  top: 130px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 19%;
+}
